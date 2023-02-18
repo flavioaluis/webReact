@@ -8,32 +8,32 @@ import projImg3 from '../assets/img/project-img3.png';
 export const Projects = () => {
  const projects = [
     {
-        title:"Business Starttup",
+        title:"Business Startup",
         description:"Design & Development",
         imgUrl:projImg1,
     },
     {
-        title:"Business Starttup",
+        title:"Business Startup",
         description:"Design & Development",
         imgUrl:projImg2,
     },
     {
-        title:"Business Starttup",
+        title:"Business Startup",
         description:"Design & Development",
         imgUrl:projImg3,
     },
     {
-        title:"Business Starttup",
+        title:"Business Startup",
         description:"Design & Development",
         imgUrl:projImg1,
     },
     {
-        title:"Business Starttup",
+        title:"Business Startup",
         description:"Design & Development",
         imgUrl:projImg2,
     },
     {
-        title:"Business Starttup",
+        title:"Business Startup",
         description:"Design & Development",
         imgUrl:projImg3,
     },
@@ -47,7 +47,7 @@ export const Projects = () => {
                     <h2>Projects</h2>
                     <p>Lorem Ipsum is simply dummy text of the project and typesetting industry. lorem ipsum is awesome</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav variant="pills" defaultActiveKey="/home">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab ">
                         <Nav.Item>
                             <Nav.Link eventKey="first">Tab One</Nav.Link>
                         </Nav.Item>
@@ -58,7 +58,7 @@ export const Projects = () => {
                             <Nav.Link eventKey="third">Tab Three</Nav.Link>
                         </Nav.Item>
                     </Nav>
-                    <Tab.Container>
+                    <Tab.Content>
                         <Tab.Pane eventKey="first">
                             <Row>
                                 {projects.map((project,index) => {
@@ -72,10 +72,10 @@ export const Projects = () => {
                             </Row>
 
                         </Tab.Pane>
-                        <Tab.Pane eventKey="second">Loren Ipsum</Tab.Pane>
-                        <Tab.Pane eventKey="third">Loren Ipsum</Tab.Pane>
+                        <Tab.Pane eventKey="second">orem Ipsum is simply dummy text of the project and typesetting industry. lorem ipsum is awesome</Tab.Pane>
+                        <Tab.Pane eventKey="third">orem Ipsum is simply dummy text of the project and typesetting industry. lorem ipsum is awesome</Tab.Pane>
 
-                    </Tab.Container>
+                    </Tab.Content>
                     </Tab.Container>
                     </Col>
                 </Row>
